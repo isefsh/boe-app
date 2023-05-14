@@ -29,3 +29,8 @@ def signUpUser():
         return jsonify({'mensagens': errors}), 400
 
     return userControllers.signUpUser(data)
+
+#este é o código da definição de rotas, pelo o que eu entendi, a gente só precisa pegar os dados 
+# digitados e às vezes, valida-los pra depois mandar pra função de backend, que estão lá no arquivo userControllers.py
+#dentro do signUpUser eu chamei umas funções que validassem os dados que o 
+# usuário enviou antes de mandar lá pra função do backend

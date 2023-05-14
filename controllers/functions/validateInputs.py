@@ -53,3 +53,4 @@ def validateConfirmPassword(password, confirmPassword):
             'mensagem': 'As senham não correspondem.'
         }
     return {'status': True}
+
