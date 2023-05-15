@@ -2,12 +2,10 @@ from flask import jsonify, make_response
 from pymongo import MongoClient
 
 # Configurando a conexão com o MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['boe-app']
+bd = MongoClient('mongodb://localhost:27017/')
+db = bd['boe-app']
 
 import bcrypt
-import jwt
-import datetime
 
 def signUpUser(data):
     collection = db['users']
